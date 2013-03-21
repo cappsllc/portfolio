@@ -1,0 +1,821 @@
+﻿<!DOCTYPE html>
+<!-- saved from url=(0036)http://www.gametech.us/speakers.html -->
+<html class="ui-mobile"><script type="text/javascript" src="chrome-extension://khbjahpecnkenngkidhioicnfpakihgo/iframe_raw.js"></script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" src="./speakers_files/user_timeline.json"></script><!--<base href="http://www.gametech.us/speakers.html">--><base href="."> 
+	<title>GameTech '12</title> 
+    <meta charset="utf-8">
+    
+    <!-- Full Screen Web App Stuff for iOS -->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,maximum-scale=1, user-scalable=no"> 
+    <link href="http://www.gametech.us/images/icon.png" rel="apple-touch-icon">
+	<link href="http://www.gametech.us/images/gt-startup.png" rel="apple-touch-startup-image"> 
+        
+	<!-- JQuery Mobile -->    
+    <link rel="stylesheet" href="http://www.gametech.us/css/jquery.mobile-1.1.0-rc.1.css">
+	<script src="./speakers_files/jquery-1.7.1.min.js"></script>
+	<script src="./speakers_files/jquery.mobile-1.1.0-rc.1.js"></script>    	
+    <script src="./speakers_files/jquery.tinysort.min.js"></script>	
+    <!-- JQuery Mobile -->     
+    
+    <!-- Custom for GameTech -->
+   	
+    <link rel="stylesheet" href="http://www.gametech.us/css/gametech-custom.css">
+    <script src="./speakers_files/gt-custom.js"></script>
+
+       
+   	<script>
+	// Twitter Feed Using JQuery
+	
+	$("#main").live('pageinit', function (evt) { 
+       	var url='http://twitter.com/statuses/user_timeline.json?screen_name=DefenseGameTech&count=5&callback=?';
+		var html='<marquee behavior="scroll" scrollamount="7" direction="left">';
+		
+		$.getJSON(url,function(data){     
+    	$.each(data,function(i,tweet){
+        	html+='<a href="http://mobile.twitter.com/DefenseGameTech" target="_blank">' +tweet.text+'</a> . . . ';
+    		});
+		
+    	html += '</marquee>';
+    	$(".results").append(html);
+    	$('div.results marquee').marquee();
+		
+    		});
+	
+		});
+	</script>
+
+
+</head>
+
+<body class="bggt ui-mobile-viewport ui-overlay-c"> 
+
+<div data-role="page" id="main" class="bggt ui-page ui-body-c ui-page-header-fixed ui-page-footer-fixed" data-url="main" tabindex="0" style="padding-top: 51px; padding-bottom: 43px; min-height: 849.0185127258301px;">
+
+<div data-role="header" data-position="fixed" class="ui-header ui-bar-a ui-header-fixed slidedown" role="banner" style="">
+
+		<div data-role="navbar" class="custom-navbar ui-navbar" role="navigation">
+			<ul class="ui-grid-d">
+            <li class="ui-block-a"><a href="http://www.gametech.us/speakers.html#main" id="home-navbar" data-icon="custom" class="ui-btn ui-btn-icon-top ui-btn-up-a" data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="span" data-iconpos="top" data-theme="a"><span class="ui-btn-inner"><span class="ui-btn-text"></span><span class="ui-icon ui-icon-custom ui-icon-shadow"></span></span></a></li>
+            <li class="ui-block-b"><a href="http://www.gametech.us/schedule.html" id="schedule-navbar" data-icon="custom" data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="span" data-iconpos="top" data-theme="a" class="ui-btn ui-btn-icon-top ui-btn-up-a"><span class="ui-btn-inner"><span class="ui-btn-text"></span><span class="ui-icon ui-icon-custom ui-icon-shadow"></span></span></a></li>
+            <li class="ui-block-c"><a href="./speakers_files/speakers.htm" id="speakers-navbar" data-icon="custom" data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="span" data-iconpos="top" data-theme="a" class="ui-btn ui-btn-icon-top ui-btn-up-a"><span class="ui-btn-inner"><span class="ui-btn-text"></span><span class="ui-icon ui-icon-custom ui-icon-shadow"></span></span></a></li>
+		    <li class="ui-block-d"><a href="http://www.gametech.us/maps.html" id="maps-navbar" data-icon="custom" data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="span" data-iconpos="top" data-theme="a" class="ui-btn ui-btn-up-a ui-btn-icon-top"><span class="ui-btn-inner"><span class="ui-btn-text"></span><span class="ui-icon ui-icon-custom ui-icon-shadow"></span></span></a></li>
+		    <li class="ui-block-e"><a href="http://www.gametech.us/more.html" id="more-navbar" data-icon="custom" data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="span" data-iconpos="top" data-theme="a" class="ui-btn ui-btn-up-a ui-btn-icon-top"><span class="ui-btn-inner"><span class="ui-btn-text"></span><span class="ui-icon ui-icon-custom ui-icon-shadow"></span></span></a></li>
+            </ul>
+	</div>
+</div><!-- /header -->
+    
+	<div data-role="content" class="ui-content" role="main">
+    <div id="gtlogo"></div>
+    </div><!-- /content -->
+
+ 
+	
+<div data-role="footer" data-theme="gt" data-position="fixed" class="ui-footer ui-bar-gt ui-footer-fixed slideup" role="contentinfo" style="">
+<div id="twitbar">
+<a href="http://mobile.twitter.com/searches?q=%23gametech" data-mini="true" data-role="button" data-icon="twitter" data-theme="a" target="_blank" data-corners="true" data-shadow="true" data-iconshadow="true" data-inline="false" data-wrapperels="span" class="ui-btn ui-btn-up-a ui-shadow ui-btn-corner-all ui-mini ui-btn-icon-left"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">#GameTech</span><span class="ui-icon ui-icon-twitter ui-icon-shadow"></span></span></a></div> 
+<div class="results"></div> 
+</div><!-- /footer -->
+
+</div><!-- /page -->
+
+
+<div class="ui-loader ui-corner-all ui-body-a ui-loader-default"><span class="ui-icon ui-icon-loading"></span><h1>loading</h1></div><div data-role="page" data-url="/speakers.html" data-external-page="true" tabindex="0" class="ui-page ui-body-c ui-page-header-fixed ui-page-active" style="padding-top: 51px; min-height: 892.0185165405273px;">
+
+<div data-role="header" data-position="fixed" class="ui-header ui-bar-a ui-header-fixed slidedown" role="banner" style="">
+
+		<div data-role="navbar" class="custom-navbar ui-navbar" role="navigation">
+			<ul class="ui-grid-d">
+            <li class="ui-block-a"><a href="http://www.gametech.us/speakers.html#main" id="home-navbar" data-icon="custom" data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="span" data-iconpos="top" data-theme="a" class="ui-btn ui-btn-up-a ui-btn-icon-top"><span class="ui-btn-inner"><span class="ui-btn-text"></span><span class="ui-icon ui-icon-custom ui-icon-shadow"></span></span></a></li>
+            <li class="ui-block-b"><a href="http://www.gametech.us/schedule.html" id="schedule-navbar" data-icon="custom" data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="span" data-iconpos="top" data-theme="a" class="ui-btn ui-btn-up-a ui-btn-icon-top"><span class="ui-btn-inner"><span class="ui-btn-text"></span><span class="ui-icon ui-icon-custom ui-icon-shadow"></span></span></a></li>
+            <li class="ui-block-c"><a href="./speakers_files/speakers.htm" id="speakers-navbar" data-icon="custom" class="ui-btn-active ui-btn ui-btn-up-a ui-btn-icon-top" data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="span" data-iconpos="top" data-theme="a"><span class="ui-btn-inner"><span class="ui-btn-text"></span><span class="ui-icon ui-icon-custom ui-icon-shadow"></span></span></a></li>
+		    <li class="ui-block-d"><a href="http://www.gametech.us/maps.html" id="maps-navbar" data-icon="custom" data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="span" data-iconpos="top" data-theme="a" class="ui-btn ui-btn-up-a ui-btn-icon-top"><span class="ui-btn-inner"><span class="ui-btn-text"></span><span class="ui-icon ui-icon-custom ui-icon-shadow"></span></span></a></li>
+		    <li class="ui-block-e"><a href="http://www.gametech.us/more.html" id="more-navbar" data-icon="custom" data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="span" data-iconpos="top" data-theme="a" class="ui-btn ui-btn-up-a ui-btn-icon-top"><span class="ui-btn-inner"><span class="ui-btn-text"></span><span class="ui-icon ui-icon-custom ui-icon-shadow"></span></span></a></li>
+            </ul>
+	</div>
+</div>
+
+	<div data-role="content" class="ui-content" role="main">	
+	<form class="ui-listview-filter ui-bar-c" role="search"><div class="ui-input-search ui-shadow-inset ui-btn-corner-all ui-btn-shadow ui-icon-searchfield ui-body-c"><input placeholder="Search speakers..." data-type="search" class="ui-input-text ui-body-c"><a href="http://www.gametech.us/speakers.html#" class="ui-input-clear ui-btn ui-btn-up-c ui-shadow ui-btn-corner-all ui-fullsize ui-btn-icon-notext ui-input-clear-hidden" title="clear text" data-corners="true" data-shadow="true" data-iconshadow="true" data-inline="false" data-wrapperels="span" data-icon="delete" data-iconpos="notext" data-theme="c" data-mini="false"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">clear text</span><span class="ui-icon ui-icon-delete ui-icon-shadow"></span></span></a></div></form><ul data-role="listview" data-filter="true" data-inset="false" data-filter-placeholder="Search speakers..." data-dividertheme="d" class="ui-listview">
+				<li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-btn ui-bar-d ui-btn-up-undefined">A</li>
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Allard.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Allard, Terry</strong></p>
+                <p class="ui-li-desc">Office of Naval Research</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>                
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Allen.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Allen, Charles</strong></p>
+                <p class="ui-li-desc">Simulation and Exercise Division at CGSC</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+
+ 				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Andersen.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Andersen, Thomas K.</strong></p>
+                <p class="ui-li-desc">Air University</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+                                
+ 				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Andrews.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Andrews, Anya</strong></p>
+                <p class="ui-li-desc">University of Central Florida</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Armstrong.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Armstrong, Stu</strong></p>
+                <p class="ui-li-desc">QinetiQ</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+ 
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Arenas.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Arenas, Fil</strong></p>
+                <p class="ui-li-desc">USAF Squadron Officer College at Maxwell AFB</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+                                                                            
+				<li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-btn ui-bar-d">B</li>
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Bawel.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Bawel, David</strong></p>
+                <p class="ui-li-desc">MotionWorks</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+                
+                <li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Bittel.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Bittel, Jeff</strong></p>
+                <p class="ui-li-desc">Training Brain Operations Center (TBOC)</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+                 
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Bliton.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Bliton, Dan</strong></p>
+                <p class="ui-li-desc">Booz Allen Hamilton</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+ 
+ 				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Boosman.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Boosman, Frank</strong></p>
+                <p class="ui-li-desc">Z Shift</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+                 
+ 				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Bottone.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Bottone, Jennie</strong></p>
+                <p class="ui-li-desc">ADL Co-Laboratory</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Bowers.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Bowers, Clint</strong></p>
+                <p class="ui-li-desc">University of Central Florida</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+
+
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Boyd-richard.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Boyd, Richard</strong></p>
+                <p class="ui-li-desc">Lockheed Martin</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+  
+  
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Boyd-tracy.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Boyd, Tracy</strong></p>
+                <p class="ui-li-desc">Engineering &amp; Computer Simulations, Inc.</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+  
+  
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Brannigan.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Brannigan, Chris</strong></p>
+                <p class="ui-li-desc">Caspian Learning</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+  
+  
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Buck.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Buck, Wayne</strong></p>
+                <p class="ui-li-desc">NATO’s Allied Command Transformation</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+   
+  
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Burgess.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Burgess, Deborah</strong></p>
+                <p class="ui-li-desc">NATO’s Allied Command Transformation</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+                                                                                                    
+				<li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-btn ui-bar-d">C</li>
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Camacho.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Camacho, Joe</strong></p>
+                <p class="ui-li-desc">JKDDC Joint Management Office (JMO) </p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Callewaert.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Callewaert, Carl</strong></p>
+                <p class="ui-li-desc">Unity Technologies</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+
+
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Calongne.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Calongne, Cynthia</strong></p>
+                <p class="ui-li-desc">Colorado Technical University</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+                       
+
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Chadwick.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Chadwick, Robert</strong></p>
+                <p class="ui-li-desc">ADL Co-Laboratory</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+                       
+ 
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Cheeseman.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Cheeseman, Andrew</strong></p>
+                <p class="ui-li-desc">c2 Consulting</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+                       
+ 
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Chertoff.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Chertoff, Dustin</strong></p>
+                <p class="ui-li-desc">University of Central Florida</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+                       
+ 
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Cichelli.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Cichelli, Janet</strong></p>
+                <p class="ui-li-desc">Serco North America</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+                       
+ 
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Cimino.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Cimino, James</strong></p>
+                <p class="ui-li-desc">D2 TEAM-Sim</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+                       
+ 
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Cooper.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Cooper, Karen</strong></p>
+                <p class="ui-li-desc">Naval Air Warfare Center Aircraft Division</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+                       
+ 
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Coughlan.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Coughlan, David</strong></p>
+                <p class="ui-li-desc">Havok</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+                       
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Covey.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Covey, Mark</strong></p>
+                <p class="ui-li-desc">Digital Domain Media Group (DDMG)</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+                
+ 				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Crocker.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Crocker, Rett</strong></p>
+                <p class="ui-li-desc">Z Shift</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>  
+                             
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Cummings.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Cummings, Paul</strong></p>
+                <p class="ui-li-desc">ICF International Modeling and Simulation Division</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+                                      
+				<li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-btn ui-bar-d">D</li>
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Dargue.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Dargue, Brandt</strong></p>
+                <p class="ui-li-desc">Boeing</p>				
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+                 
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/DiGiovanni.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>DiGiovanni, Frank</strong></p>
+                <p class="ui-li-desc">Office of the Deputy Assistant Secretary of Defense</p>				
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+                 
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Dere.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Dere, Troy</strong></p>
+                <p class="ui-li-desc"> US Army ARL STTC</p>				
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+
+                 
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Dominguez.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Dominguez, Manny</strong></p>
+                <p class="ui-li-desc">Air Force Medical Modeling &amp; Simulation </p>				
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+
+                 
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Dubow.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Dubow, Leslie</strong></p>
+                <p class="ui-li-desc">Army PEOSTRI</p>				
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+
+                 
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Dubuc.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Dubuc, Chris</strong></p>
+                <p class="ui-li-desc">Engineering &amp; Computer Simulations, Inc.</p>				
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+
+ 				<li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-btn ui-bar-d">F</li>
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Falkinburg.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Falkinburg, Jeffrey</strong></p>
+                <p class="ui-li-desc">Wright Patterson AFB</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Figley.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Figley, Dave</strong></p>
+                <p class="ui-li-desc">C2 Technologies, Inc.</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Fiske.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Fiske, Jeff</strong></p>
+                <p class="ui-li-desc">IDS</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Fliesen.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Fliesen, David</strong></p>
+                <p class="ui-li-desc"> Sonalysts, Inc.</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+                        
+
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Floyd.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Floyd, Charles "Bourke"</strong></p>
+                <p class="ui-li-desc">NAWC TSD Orlando</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+                        
+  
+ 
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Fonteboa.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Fonteboa, Laz</strong></p>
+                <p class="ui-li-desc">DiSTI Corporation</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+                        
+  
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Franceschini.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Franceschini, Robert</strong></p>
+                <p class="ui-li-desc">Science Applications International Corporation </p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+                        
+                                                                                                              
+				<li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-btn ui-bar-d">G</li>
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Goldman.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Goldman, Steve</strong></p>
+                <p class="ui-li-desc">Why U</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Golson.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Golson, Mick</strong></p>
+                <p class="ui-li-desc">ICF International</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+                 
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Griffith.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Griffith, Tami</strong></p>
+                <p class="ui-li-desc">U.S. Army Research Lab</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+                                  
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Gundlach.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Gundlach, Sascha</strong></p>
+                <p class="ui-li-desc">RealTime Immersive Inc.</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+                                  
+				<li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-btn ui-bar-d">H</li>
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Haag.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Haag, Jason</strong></p>
+                <p class="ui-li-desc">ADL Co-Laboratory</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+
+                                  
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Hruska.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Hruska, Mike</strong></p>
+                <p class="ui-li-desc">Problem Solutions</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+ 
+ 				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Hussain.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Hussain, Talib</strong></p>
+                <p class="ui-li-desc">Raytheon BBN Technologies</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+                                                  
+				<li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-btn ui-bar-d">J</li>
+    			<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Jacobson.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Jacobson, Dov</strong></p>
+                <p class="ui-li-desc"> GamesThatWork</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+
+				<li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-btn ui-bar-d">J</li>
+    			<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/James.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>James, Thomas</strong></p>
+                <p class="ui-li-desc">US Army Armor School</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+                                                  
+    			<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Jesukiewicz.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Jesukiewicz, Paul</strong></p>
+                <p class="ui-li-desc">Booz Allen Hamilton</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+
+				<li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-btn ui-bar-d">J</li>
+    			<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Jones.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Jones, Michael</strong></p>
+                <p class="ui-li-desc">Google</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+                                             
+				<li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-btn ui-bar-d">K</li>
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Kaughman.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Kaughman, Matt</strong></p>
+                <p class="ui-li-desc">Enhanced Dynamic Geo-Social Environment </p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Kearney.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Kearney, Sandy</strong></p>
+                <p class="ui-li-desc">e426.org, Villanova University </p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+                                  
+	
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Korris.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Korris, James</strong></p>
+                <p class="ui-li-desc">Creative Technologies Incorporated</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+                                  
+	
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Kronenwetter.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Kronenwetter, Dave</strong></p>
+                <p class="ui-li-desc">Naval Air Warfare Center</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+                                  
+	
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Kukulinski.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Kukulinski, Ross</strong></p>
+                <p class="ui-li-desc">ASTi</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+                                  
+	
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Kumm.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Kumm, Corey</strong></p>
+                <p class="ui-li-desc">Havok</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+                                  
+				<li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-btn ui-bar-d">L</li>
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/LaViola.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>LaViola, Joe</strong></p>
+                <p class="ui-li-desc">University of Central Florida</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>                 
+
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Lindgren.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Lindgren, Robby</strong></p>
+                <p class="ui-li-desc">University of Central Florida</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>        
+
+
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Low.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Low, John</strong></p>
+                <p class="ui-li-desc">Carney, Inc.</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>        
+                                                                                                      
+				<li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-btn ui-bar-d">M</li>
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Mall.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Mall, Howard</strong></p>
+                <p class="ui-li-desc">Engineering and Computer Simulations, Inc.</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+ 
+   				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Matos.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Matos, Justin</strong></p>
+                <p class="ui-li-desc">RealTime Immersive Inc.</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>              
+ 
+ 
+   				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Maxwell.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Maxwell, Doug</strong></p>
+                <p class="ui-li-desc">U.S. Army Research Lab</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>              
+ 
+ 
+   				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/McDowell.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>McDowell, Perry</strong></p>
+                <p class="ui-li-desc">Naval Postgraduate School</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>              
+ 
+ 
+   				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/McKeown.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>McKeown, Dave</strong></p>
+                <p class="ui-li-desc">TerraSim, Inc.&nbsp;</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>              
+ 
+ 
+   				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/McLennan.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>McLennan, Kay</strong></p>
+                <p class="ui-li-desc">Tulane University</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>              
+ 
+ 
+   				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/McNamara.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>McNamara, Jennifer</strong></p>
+                <p class="ui-li-desc"> BreakAway, Ltd.</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>              
+ 
+ 
+   				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Metcalf.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Metcalf, David</strong></p>
+                <p class="ui-li-desc">University of Central Florida</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>              
+ 
+ 
+   				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Medford.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Medford, Ashley</strong></p>
+                <p class="ui-li-desc">Booz Allen Hamilton</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>              
+ 
+ 
+   				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Mills.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Mills, Jeff</strong></p>
+                <p class="ui-li-desc">ADL Co-Laboratory</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>              
+ 
+ 
+   				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Milton.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Milton, Evelyn</strong></p>
+                <p class="ui-li-desc">Thomas N. Barnes Center for Enlisted Education</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>              
+ 
+ 
+   				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Moore.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Moore, Dana</strong></p>
+                <p class="ui-li-desc">SAIC</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>              
+ 
+ 
+   				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Morisson.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Morisson, Pete</strong></p>
+                <p class="ui-li-desc">Bohemia Interactive Simulations</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>              
+ 
+ 
+   				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Morris.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Morris, Rick</strong></p>
+                <p class="ui-li-desc">Serco North America</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>              
+ 
+ 
+   				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Moxness.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Moxness, Greg</strong></p>
+                <p class="ui-li-desc">Raytheon</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>              
+ 
+
+                                                 
+				<li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-btn ui-bar-d">N</li>
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Newman.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Newman, John</strong></p>
+                <p class="ui-li-desc">Hewlett Packard</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+
+				<li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-btn ui-bar-d">O</li>
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Orvis.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Orvis, Kara</strong></p>
+                <p class="ui-li-desc">Pacific Science and Engineering (PSE)</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+                 	
+				<li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-btn ui-bar-d">P</li>
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Pettit.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Pettit, Beth</strong></p>
+                <p class="ui-li-desc">Medical Simulation Research (MSR) Branch</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+ 
+ 				<li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-btn ui-bar-d">P</li>
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Platten.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Platten, John</strong></p>
+                <p class="ui-li-desc">RGH Entertainment and RGH Games</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+
+				<li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-btn ui-bar-d">P</li>
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Pokorny.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Pokorny, Bob</strong></p>
+                <p class="ui-li-desc">IAI</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+
+				<li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-btn ui-bar-d">P</li>
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Poltrack.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Poltrack, Jonathan</strong></p>
+                <p class="ui-li-desc">ADL Co-Laboratory</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+                                                                   	
+				<li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-btn ui-bar-d">R</li>
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Ratwani.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Ratwani, Krista</strong></p>
+                <p class="ui-li-desc">Aptima, Inc.</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>	
+
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Raybourn.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Raybourn, Elaine</strong></p>
+                <p class="ui-li-desc">ADL Co-Laboratory</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>	
+                                                      
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Reilly.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Reilly, Scott</strong></p>
+                <p class="ui-li-desc">Charles River Analytics</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>	
+
+
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Reyher.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Reyher, Trey</strong></p>
+                <p class="ui-li-desc">Air Force Research Laboratory</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>	
+                     
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Rice-ed.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Rice, Edward A.</strong></p>
+                <p class="ui-li-desc">Air Education and Training Command</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>	
+                     
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Rice-ray.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Rice, Ray</strong></p>
+                <p class="ui-li-desc">Heartwood, Inc. </p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>	
+                     
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Roberts.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Roberts, John</strong></p>
+                <p class="ui-li-desc">Naval War College</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>	
+                     
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Robson.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Robson, Robby</strong></p>
+                <p class="ui-li-desc">Eduworks</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>	
+                     
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Rockwell.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Rockwell, Kris</strong></p>
+                <p class="ui-li-desc">Hybrid Learning Systems</p>
+                 </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>	
+               
+                                      
+				<li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-btn ui-bar-d">S</li>
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Sanchez.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Sanchez, Alicia</strong></p>
+                <p class="ui-li-desc">Defense Acquisition University</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>	
+ 
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Schatz.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Schatz, Sae</strong></p>
+                <p class="ui-li-desc">MESH Solutions, LLC</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>	
+
+ 
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Schmorrow.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Schmorrow, Dylan</strong></p>
+                <p class="ui-li-desc">Medical Service Corps, US Navy</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>	
+                 
+ 
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Scott.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Scott, Gabriel</strong></p>
+                <p class="ui-li-desc">Virtual Heroes / ARA</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>	
+                 
+ 
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Scribner.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Scribner, Toni</strong></p>
+                <p class="ui-li-desc">Air University</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>	
+
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Smerchansky.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Smerchansky, James</strong></p>
+                <p class="ui-li-desc">Marine Corps Systems Command</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>	                 
+ 
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Sidran.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Sidran, D. Ezra</strong></p>
+                <p class="ui-li-desc">Riverview AI</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>	
+                 
+ 
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Siebold.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Siebold, Mallory</strong></p>
+                <p class="ui-li-desc">e426.org</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>	
+                 
+ 
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Sims.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Sims, Ed</strong></p>
+                <p class="ui-li-desc">Vcom3D</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>	
+                 
+ 
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Smith-eileen.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Smith, Eileen</strong></p>
+                <p class="ui-li-desc">University of Central Florida</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>	
+                 
+ 
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Smith-peter.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Smith, Peter</strong></p>
+                <p class="ui-li-desc">ADL Co-Laboratory</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>	
+                 
+  
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Smith-robert.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Smith, Robert</strong></p>
+                <p class="ui-li-desc">Department of Veterans Affairs</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>	
+                
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Smith-ross.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Smith, Ross</strong></p>
+                <p class="ui-li-desc">Microsoft Lync</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>	
+                 
+ 
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Sotomayor.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Sotomayor, Teresita</strong></p>
+                <p class="ui-li-desc">Army Research Laboratory (ARL)</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>	
+                 
+ 
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Sottilare.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Sottilare, Bob</strong></p>
+                <p class="ui-li-desc">Army Research Laboratory (ARL)</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>	
+                 
+ 
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Sparagen.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Sparagen, Mark</strong></p>
+                <p class="ui-li-desc">University of Southern California</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>	
+                 
+ 
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Spruill.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Spruill, Matt</strong></p>
+                <p class="ui-li-desc">Engineering &amp; Computer Simulations, Inc.</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>	
+                 
+ 
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Stanton.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Stanton, Becca</strong></p>
+                <p class="ui-li-desc">Air Force Research Laboratory</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>	
+                 
+ 
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Steinkeuhler-Squire.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Steinkeuhler-Squire, Constance</strong></p>
+                <p class="ui-li-desc">White House Office of Science and Technology Policy</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>	
+                 
+ 
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Sterrett.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Sterrett, James</strong></p>
+                <p class="ui-li-desc">General Staff College</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>	
+                 
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Stricker.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Stricker, Andrew</strong></p>
+                <p class="ui-li-desc">Air University</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>	
+                  
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Sturgell.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Sturgell, Mark</strong></p>
+                <p class="ui-li-desc">Air Force Research Laboratory</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>	
+                 
+ 
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Swanson.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Swanson, Kris</strong></p>
+                <p class="ui-li-desc">Intuition</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>	
+                 
+                 
+				<li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-btn ui-bar-d">V</li>
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/vanLent.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>van Lent, Michael</strong></p>
+                <p class="ui-li-desc">Soar Technology, Inc.</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>	
+                                               
+				<li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-btn ui-bar-d">W</li>
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Walters.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Walters, Joseph</strong></p>
+                <p class="ui-li-desc">Unity Technologies</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>	
+
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Washington.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Washington, Coleman</strong></p>
+                <p class="ui-li-desc">Critical Mass Interactive, Inc.</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+                
+
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Whatley.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Whatley, Doug</strong></p>
+                <p class="ui-li-desc">BreakAway</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+ 
+ 
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Williams.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Williams, David</strong></p>
+                <p class="ui-li-desc">NAWC TSD Orlando</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+ 
+ 
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Wingrave.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Wingrave, Chadwick A.</strong></p>
+                <p class="ui-li-desc">University of Central Florida</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+ 
+ 
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Wray.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Wray, Robert</strong></p>
+                <p class="ui-li-desc">Soar Technology</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+  
+ 
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Writer-Sinclair.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Writer-Sinclair, Gwenette</strong></p>
+                <p class="ui-li-desc">SNtial Technologies, Inc.</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>
+ 
+ 				<li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-btn ui-bar-d">Z</li>
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Zielke.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Zielke, Marjorie</strong></p>
+                <p class="ui-li-desc">UT Dallas</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>	
+ 
+ 				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a data-rel="dialog" data-transition="pop" href="http://www.gametech.us/speakers/Zyda.html" class="ui-link-inherit">
+                <p class="ui-li-desc"><strong>Zyda, Mike</strong></p>
+                <p class="ui-li-desc">University of Southern California</p>
+                </a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>	                                                                               
+			</ul>			
+	</div><!-- /content -->
+
+
+</div></body></html>

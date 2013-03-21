@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+        <title>Had That Beer Mobile</title>
+        <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"/>
+        <link rel="stylesheet" href="/assets/mobile/jquery.mobile-1.0rc1.css" />
+        <link rel="stylesheet" href="/assets/mobile/style.css" />
+        <script type="text/javascript" src="/assets/js/jquery-1.6.min.js"></script>
+        <script type="text/javascript" src="/assets/mobile/jquery.mobile-1.0rc1.js"></script>
+        <script type="text/javascript" src="/assets/mobile/js/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="/assets/mobile/js/bookmark_bubble.js"></script>
+        <script type="text/javascript" src="/assets/mobile/js/mobile.js"></script>
+        
+        <!-- Config jQmobile -->
+        <script type="text/javascript">
+                $(document).bind("mobileinit", function(){
+                    $.extend(  $.mobile , {
+                        useFastClick: false
+                    });
+                });
+               
+                $('div').live('pageshow',function(event, ui){
+                    // Setup the page shown
+                    var page = $('#' + this.id + ' input.setup').val();
+                    if(page)
+                        window['htb'][page]['setup']();
+                });
+        </script>
+
+    </head>
+    <body onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);">
+       
+        <div data-role="page" id="htb-home"> 
+    <h1 id="htb-logo"><img src="/assets/mobile/images/logo-start.png" alt="Had That Beer" /></h1> 
+    <div data-role="content" id="htb-homeheader"> 
+                <a href="https://m.facebook.com/dialog/oauth?client_id=207322699314092&redirect_uri=http%3A%2F%2Fwww.hadthatbeer.com%2F%2Fmobile%2Flogin%2Ffacebook&state=2728451a0e11236283007d05564045a2&scope=email%2C+offline_access%2C+publish_actions%2C+publish_stream&display=touch" class="facebook facebook-login"  data-role="button" data-theme="b"><img src="/assets/mobile/images/icon-facebook-32.png"/>Login with Facebook</a>
+        <div class="ui-grid-a">
+            <div class="ui-block-a"><a href="#signup" class="signup-button" data-role="button" data-theme="oj">New Account</a></div>
+            <div class="ui-block-b"><a href="#login" class="signup-button" data-role="button" data-theme="oj">Login</a></div>
+        </div>
+    </div> 
+</div> 
+
+<div data-role="page" id="login"> 
+    <div data-role="header">
+        <h1>Login</h1>
+        <a href="#htb-home" data-rel="back" data-icon="home" data-iconpos="notext" data-direction="reverse" class="ui-btn-left jqm-back">Home</a>
+    </div>
+    <div data-role="content"> 
+        <form action="" id="loginForm" method="post">
+                        <div data-role="field-contain" class="required">
+                <label for="login">Email</label>
+                <input type="text" name="login" value="" class="text-box"  />            </div>
+            <div data-role="field-contain" class="required">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" value="" />
+            </div>
+            <button data-role="button" data-theme="oj">Login</button>
+        </form>
+        <a href="#forgot-password" data-role="button">I forgot my password</a>
+    </div> 
+</div> 
+
+<div data-role="page" id="forgot-password"> 
+    <div data-role="header">
+        <h1>Forgot Password</h1>
+        <a href="#htb-home" data-rel="back"  data-direction="reverse" class="ui-btn-left jqm-back">Back</a>
+    </div>
+    <div data-role="content"> 
+        <form action="" id="forgotPasswordForm" method="post">
+            <p>
+            We will send reset instructions to the email associated with your account. 
+            </p>
+            <div data-role="field-contain" class="required">
+                <label for="login">Email</label>
+                <input type="text" name="email" value="" class="text-box"  />            </div>
+            <button data-role="button" data-theme="oj">Reset Password</button>
+        </form>
+        <div class="notice" style="display:none">
+            We have dispatched an email to your address containing instructions on how to reset your password.
+        </div>
+    </div> 
+</div> 
+
+<div data-role="page" id="reset-password"> 
+    <div data-role="header">
+        <h1>Reset Password</h1>
+        <a href="#htb-home" data-rel="back"  data-direction="reverse" class="ui-btn-left jqm-back">Back</a>
+    </div>
+    <div data-role="content"> 
+        <form action="" id="resetPasswordForm" method="post">
+            <p>
+                To reset your password use the fields below.
+            </p>
+            <input type="hidden" name="code" value=""/>
+            <div data-role="field-contain" class="required field">
+                <label for="pass1">New Password</label>
+                <input type="text" name="pass1" value="" id="pass1" class="text-box"  />            </div>
+            <div data-role="field-contain" class="required field">
+                <label for="pass2">Repeat Password</label>
+                <input type="text" name="pass2" value="" id="pass2" class="text-box"  />            </div>
+            <button data-role="button" data-theme="oj">Reset Password</button>
+        </form>
+        <div class="notice" style="display:none">
+            Your password has been reset!
+            <a href="#login" data-role="button">Continue to Login</a>
+        </div>
+    </div> 
+</div> 
+
+
+<div data-role="page" id="signup"> 
+    <div data-role="header">
+        <h1> Create Account</h1>
+        <a href="#htb-home" data-rel="back" data-icon="home" data-iconpos="notext" data-direction="reverse" class="ui-btn-left jqm-back">Home</a>
+    </div>
+    <div data-role="content"> 
+        <input class="setup" type="hidden" value="Signup"/>
+        <form action="/mobile/signup" method="post" id="signupForm">
+                        <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <label for="first_name">First Name</label>
+                    <input type="text" name="first_name" value="" id="first_name" class="text-box"  />            
+                </div>
+                <div class="ui-block-b">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" name="last_name" value="" id="last_name" class="text-box"  />            
+                </div>
+            </div>
+            <div data-role="field-contain" class="required">
+                <label for="email">Email</label>
+                <input type="text" name="email" value="" class="text-box"  />            </div>
+            <div data-role="field-contain">
+                <label for="password">Password</label>
+                <input type="password" name="password" value="" class="text-box"  />                <p class="description"> 4 characters minimum</p>
+            </div>
+            <button data-role="button" data-theme="oj">Sign up!</button>
+        </form>
+    </div> 
+</div> 
+
+
+<script type="text/javascript">
+    $(document).ready( function(){
+        htb.Login.setup();
+        htb.Signup.setup();
+        htb.ForgotPassword.setup();
+        htb.ResetPassword.setup();
+    });
+</script>
+
+
+        <!-- Get Mobile Safari Header out of here-->
+        <script type="text/javascript">
+            addEventListener("load", function() { setTimeout(hideURLbar, 100); }, false);
+
+            function hideURLbar(){
+                window.scrollTo(0,1);
+            }
+        </script>
+
+        <script type="text/javascript">
+            $('div:jqmData(url="signup/")').live('pageshow',function(){
+                htb.Signup.setup();
+            });
+        </script>
+        
+        <!-- Analytics -->
+        <script type="text/javascript">
+
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-18975786-4']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+        </script>
+    </body>
+</html>
+
+

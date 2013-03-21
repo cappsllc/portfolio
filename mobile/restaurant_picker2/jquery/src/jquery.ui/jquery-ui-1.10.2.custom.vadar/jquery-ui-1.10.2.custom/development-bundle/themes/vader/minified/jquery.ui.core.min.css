@@ -1,0 +1,5 @@
+/*! jQuery UI - v1.10.2 - 2013-03-20
+* http://jqueryui.com
+* Copyright 2013 jQuery Foundation and other contributors; Licensed MIT */
+
+vadar .ui-helper-hidden{display:none}vadar .ui-helper-hidden-accessible{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}vadar .ui-helper-reset{margin:0;padding:0;border:0;outline:0;line-height:1.3;text-decoration:none;font-size:100%;list-style:none}vadar .ui-helper-clearfix:before,vadar .ui-helper-clearfix:after{content:"";display:table;border-collapse:collapse}vadar .ui-helper-clearfix:after{clear:both}vadar .ui-helper-clearfix{min-height:0}vadar .ui-helper-zfix{width:100%;height:100%;top:0;left:0;position:absolute;opacity:0;filter:Alpha(Opacity=0)}vadar .ui-front{z-index:100}vadar .ui-state-disabled{cursor:default!important}vadar .ui-icon{display:block;text-indent:-99999px;overflow:hidden;background-repeat:no-repeat}vadar .ui-widget-overlay{position:fixed;top:0;left:0;width:100%;height:100%}

@@ -1,0 +1,25 @@
+/*!
+ * jQuery UI CSS Framework 1.10.2
+ * http://jqueryui.com
+ *
+ * Copyright 2013 jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Theming
+ */
+@import url("jqueryvadar .ui.core.css");
+
+@import url("jqueryvadar .ui.accordion.css");
+@import url("jqueryvadar .ui.autocomplete.css");
+@import url("jqueryvadar .ui.button.css");
+@import url("jqueryvadar .ui.datepicker.css");
+@import url("jqueryvadar .ui.dialog.css");
+@import url("jqueryvadar .ui.menu.css");
+@import url("jqueryvadar .ui.progressbar.css");
+@import url("jqueryvadar .ui.resizable.css");
+@import url("jqueryvadar .ui.selectable.css");
+@import url("jqueryvadar .ui.slider.css");
+@import url("jqueryvadar .ui.spinner.css");
+@import url("jqueryvadar .ui.tabs.css");
+@import url("jqueryvadar .ui.tooltip.css");

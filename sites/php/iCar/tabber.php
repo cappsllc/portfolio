@@ -1,0 +1,1 @@
+<?php include(TEMPLATEPATH."/jtabber.php"); //for backward compatibility ?>

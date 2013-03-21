@@ -1,0 +1,720 @@
+/*
+Theme Name: iCar Theme
+Author URI: http://icar.ithemes.com/
+Version: 1.3
+Author: iThemes
+Description: iCar is a Premium WordPress Theme from iThemes.com designed for business/company websites who want an integrated blog component.
+
+All the CSS, design, and images are copyrighted by iThemes Media. Please don't steal.
+All WordPress functions and code licensed under GPL: http://www.opensource.org/licenses/gpl-license.php
+
+Version History
+	1.0 - 2008-08-20
+		First Release
+	1.0.1 - 2008-09-09
+		Added WordPress 2.6 image styles
+	1.2 - 2008-10-13
+		Added Featured Images fader
+	1.2.1 - 2008-11-03
+		New Feature Image version - fixed bugs
+	1.2.2 - 2009-01-02
+		Updated style.css Version History to new format
+		Updated plugins/iThemesFileUtility.php to version 1.3.0
+	1.2.3 - 2009-01-22
+		Updated style.css to remove float from #content img
+	1.3.0 - 2009-02-12
+		Added /legacy folder
+		Replaced /plugins with /lib
+		Completely revamped the functions.php file
+		Replaced menu code with wp_page_menu in header.php and footer.php
+		Added <?php do_action('it_footer'); ?> to footer.php
+		Fixed IE6 Bug in style.css (#feature and #feature-image)
+		Added Contact page template (page_contact.php)
+*/
+
+html, body { margin: 0; padding: 0; }
+
+body { 
+	background: #666 url(images/background.png);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align: center;
+}
+
+body * {margin: 0px; padding: 0px;}
+
+.clearfix:after { content: "."; display: block; clear: both; margin: 0px; padding: 0px; height: 0; visibility: hidden; }
+
+/*********************************************
+		Link Styles
+*********************************************/
+a {
+	color: #cc3300;
+	text-decoration: underline;
+}
+a:hover { color: #000; text-decoration: underline; }
+
+/*********************************************
+		Text Elements
+*********************************************/
+p, ul, ol, blockquote {color: #333;}
+ol, ul {
+	margin: 5px 35px;
+}
+blockquote {
+	margin: 5px 0px 5px 10px;
+	padding: 0px 0px 0px 10px;
+	border-left: 1px solid #999;
+}
+img { border: 0px; background: none; }
+p {
+	padding: 10px 0px;
+	margin: 0px;
+}
+/*********************************************
+		Header Styles
+*********************************************/
+h1 { /* This style used as title on single posts and pages */
+	font-family: Helvetica, Arial, Sans-Serif;
+	font-size: 20px;
+	margin: 0px; padding: 10px 0px 0px 0px;
+	color: #000;
+	text-decoration: none;
+}
+h1 a {
+	color: #000;
+	text-decoration: none;
+}
+h1 a:hover {
+	color: #666;
+	text-decoration: none;
+}
+h2 { /* This style used as header in the sidebars */
+	font-size: 15px;
+	color: #333;
+	font-family: Helvetica, Arial, Sans-Serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin: 0px 0px 10px 0px; padding: 5px;
+	border-bottom: 1px solid #333;
+}
+h3 { /* This style used as the post titles on homepage/archive */
+	font-family: Helvetica, Arial, Sans-Serif;
+	font-size: 20px;
+	margin: 0px; padding: 10px 0px 5px 0px;
+	color: #545454;
+	text-decoration: none;
+}
+h3 a {
+	color: #545454;
+	text-decoration: none;
+}
+h3 a:hover {
+	color: #666;
+	text-decoration: none;
+}
+h4 { /* This style used as title for comments and as the identifying header on archive page  */
+	font-family: Helvetica, Arial, Sans-Serif;
+	font-size: 15px;
+	padding: 10px 0px 5px 0px;
+	margin: 0px;
+	color: #000;
+	text-decoration: none;
+}
+
+/*********************************************
+		Container Div
+*********************************************/
+#container {
+	background: url(images/container-bg.gif) top center repeat-y;
+	text-align: left;
+    margin: 0px auto;
+    width: 1000px;
+    padding: 0px 8px;
+}
+.have_sidebar { /* insert a new bg image to give a sidebar bg */
+	background: url(images/inner-bg.gif) top center repeat-y;
+}
+
+/*********************************************
+		Header Styles
+*********************************************/
+#header {
+	background: url(images/header.jpg) no-repeat;
+	width: 1000px; height: 148px;
+	margin: 0px; padding: 0px;
+	display: block;
+	position: relative;
+}
+#header #title {
+	display: block;
+	width: 780px;
+	float: left;
+	color: #000;
+	font-size: 45px;
+	font-family: "Impact", "Times New Roman", Georgia, Serif;
+	font-weight: normal;
+	margin: 0px; padding: 30px 0px 0px 30px;
+	letter-spacing: 0px;
+}
+#header #title a {
+	color: #000;
+	text-decoration: none;
+}
+#header #title a:hover {
+	color: #666;
+	text-decoration: none;
+}
+#header #desc {
+	clear: both;
+	display: block;
+	width: 740px;
+	float: left;
+	color: #666;
+	font-size: 15px;
+	font-family: Arial, Tahoma, Verdana;
+	font-weight: normal;
+	margin: 0px; padding: 0px 0px 0px 33px;
+	letter-spacing: 0px;
+	text-transform: uppercase;
+}
+#header #search {
+	display: block;
+	width: 200px;
+	float: right;
+	text-align: right;
+	margin: 0px; padding: 0px 20px 0px 0px;
+}
+#search form {
+	display: block;
+	margin: 0px; padding: 0px 0px 0px 0px;
+}
+#search input {
+	margin: 0px; padding: 3px;
+	background: #FFF;
+	border: 1px solid #454545;
+}
+
+/*********************************************
+		Horizontal Navigaion Styles
+*********************************************/
+#menu {
+	background: #494949 url(images/menu-bg.gif) repeat-x;
+	border-top: 2px solid #e4e4e4;
+	border-bottom: 2px solid #e4e4e4;
+	color: #FFF;
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-weight: bold;
+	text-align: left;	
+	text-transform: uppercase;
+	padding: 0px 0px;
+	margin: 0px;
+	height: 22px;
+	display: block;
+	clear: both;
+}
+#menu ul {
+	margin: 0px; padding: 0px;
+	height: 22px;
+	z-index: 100;
+}
+#menu ul li {
+	display: block;
+	float: left;
+	list-style-type: none;
+	margin: 0px; padding: 0px;
+}
+#menu ul li a {
+	display: block;
+	color: #FFF;
+	margin: 0px; padding: 0px 15px;
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 22px;
+	border-right: 2px solid #e4e4e4;
+}
+#menu ul li.home a {
+	border-left: 0px;
+}
+/* if you want to set a "current page item" style, do it here */
+#menu ul li.current_page_item a {
+	background: #494949 url(images/menu-bg.gif) 0px -22px repeat-x;
+	color: #FFF;
+	margin: 0px; padding: 0px 15px;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 22px;
+}
+#menu ul li:hover,
+#menu ul li.sfhover {
+	background: #494949 url(images/menu-bg.gif) 0px -22px repeat-x;
+}
+#menu ul li a:hover {
+	color: #FFF;
+	margin: 0px; padding: 0px 15px;
+	text-decoration: none;
+	line-height: 22px;
+}
+
+/*********************************************
+		Content Div
+*********************************************/
+#content {
+	float: left;
+	margin: 0px; padding: 0px;
+	width: 700px;
+	display: block;
+	border: 0px solid black;
+}
+#content img {
+	margin: 0px 10px 5px 0px;
+}
+.post-more { /* Use this class to style the "more" tag */
+}
+.post-more a, .post-more a:visited { /* Use this class to style the link within the post-more div */
+}
+
+
+/*********************************************
+		If is Homepage
+*********************************************/
+#home {
+	margin: 0px; padding: 0px;
+	width: 700px;
+	display: block;
+	background: #FFF;
+}
+
+#home #feature-image {
+	width: 391px;
+	overflow: hidden;
+}
+#home #feature {
+	margin: 0px; padding: 15px;
+	width: 279px; height: 232px;
+	overflow: hidden;
+	display: block;
+	background: #C83D00;
+	float: left;
+}
+#home #feature a {
+	color: #fff;
+	text-decoration: none;
+}
+#home #feature a:hover { color: #000; text-decoration: underline; }
+
+#home #feature img {
+	float: left;
+	margin: 0px 12px 0px 0px;
+}
+#home #feature h3 {
+	font-size: 30px;
+	color: #FFF;
+}
+
+#home #feature p {
+	color: #FFF;
+
+}
+
+#home #boxes {
+	clear: both;
+	overflow: hidden;
+	margin: 15px 0px; padding: 0px;
+	width: 700px;
+	display: block;
+	background: #ffffff url(images/box-bg2.gif) top center repeat-y;
+}
+#home #boxes p,
+#home #boxes img {
+	margin: 0px; padding: 0px;
+}
+#home #boxes img {
+	margin: 0px 0px 10px 0px;
+}
+#home #boxes h2 {
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #042a58;
+	border: none;
+	margin: 10px 0px 5px 0px; padding: 0px;
+}
+#home #boxes p {
+	text-align: justify;
+}
+#home #boxleft {
+	display: block;
+	margin: 0px; padding: 0px 15px;
+	float: left;
+	width: 203px;
+}
+#home #boxmiddle {
+	display: block;
+	margin: 0px; padding: 0px 15px;
+	float: left;
+	width: 203px;
+}
+#home #boxright {
+	display: block;
+	margin: 0px; padding: 0px 15px;
+	float: left;
+	width: 203px;
+}
+
+/*********************************************
+		If is NOT Homepage
+*********************************************/
+.inner {
+}
+#inner {
+	display: block;
+	float: left;
+	width: 480px;
+	margin: 0px; padding: 10px 15px;
+}
+
+/*********************************************
+		Post Meta Styles
+*********************************************/
+.meta-top {
+	clear: both; /* we need this so floats in the post are cleared */
+	padding: 10px 5px 10px 5px;
+	margin: 10px 0px 10px 0px;
+	color: #333;
+	font-size: 12px;
+	font-weight: normal;
+	text-transform: uppercase;
+	border-top: 1px solid #333;
+	border-bottom: 1px solid #333;
+}
+.meta-top a {
+	color: #333;
+	text-decoration: none;
+}
+.meta-top a:hover {
+	color: #AAA;
+	text-decoration: underline;
+}
+.meta-bottom {
+	clear: both; /* we need this so floats in the post are cleared */
+	padding: 5px 0px;
+	margin: 0px 0px 15px 0px;
+	border-bottom: 1px solid #333;
+	font-size: 12px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+.meta-bottom a {
+	color: #333;
+	text-decoration: none;
+}
+.meta-bottom a:hover {
+	color: #333;
+	text-decoration: none;
+}
+.meta-date {
+	margin: 0px; padding: 0px 0px 0px 0px;
+}
+.meta-author {
+	margin: 0px 0px;
+}
+.meta-comments {
+	margin: 0px; padding: 0px 8px 0px 18px;
+	background: url(images/comments.png) left 2px no-repeat;
+}
+.meta-category {
+	margin: 0px; padding: 0px 8px 0px 18px;
+	background: url(images/folder.png) left 0px no-repeat;
+}
+.meta-more {
+	margin: 0px; padding: 0px 8px 0px 18px;
+	background: url(images/continue_reading.png) left 0px no-repeat;
+}
+
+/*********************************************
+		Previous/Next Page Navigation
+*********************************************/
+.page-nav {
+	clear: both; /* To clear any floats */
+	margin: 0px; padding: 10px 0px;
+}
+.nav-previous {
+	width: 249px; 
+	float: left; 
+	text-align: left;
+}
+.nav-next {
+	width: 249px; 
+	float: right; 
+	text-align: right;
+}
+
+/*********************************************
+		Right Sidebar
+*********************************************/
+#r_sidebar {
+	display: inline;
+	color: #333;
+	float: right;
+	width: 170px;
+	margin: 0px; padding: 10px;
+	display: block; /* floats are handled as block elements, this is to fix 
+							   a margin collapsing bug in IE */
+}
+#r_sidebar h2 {
+	font-size: 14px;
+	color: #333;
+	font-family: Helvetica, Arial, Sans-Serif;
+	font-weight: bold;
+	text-align: left;
+	text-transform: uppercase;
+	margin: 0px 0px 10px 0px; padding: 5px;
+	border-bottom: 1px solid #333;
+}
+#r_sidebar h2.archives {
+	padding: 5px 5px 5px 20px;
+	background: url(images/calendar.png) left 2px no-repeat;
+}
+#r_sidebar h2.categories {
+	padding: 5px 5px 5px 20px;
+	background: url(images/folder.png) left 2px no-repeat;
+}
+#r_sidebar h2.links {
+	padding: 5px 5px 5px 20px;
+	background: url(images/display.png) left 2px no-repeat;
+}
+#r_sidebar h2.posts {
+	padding: 5px 5px 5px 20px;
+	background: url(images/tab_document.png) left 2px no-repeat;
+}
+#r_sidebar h2.feeds {
+	padding: 5px 5px 5px 20px;
+	background: url(images/rss.png) left 2px no-repeat;
+}
+#r_sidebar p {
+	padding: 5px;
+}
+#r_sidebar img {
+	text-align: center;
+}
+#r_sidebar form {
+	padding: 0px;
+	margin: 5px;
+}
+#r_sidebar ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	text-align: left;
+}
+#r_sidebar ul li {
+	padding: 0px 0px 10px 0px;
+}
+#r_sidebar ul li ul {
+	padding: 0px 0px 0px 0px;
+}
+#r_sidebar ul li ul li {
+	padding: 0px;
+	margin: 0px;
+}
+#r_sidebar ul li ul li a {
+	color: #333;
+	text-decoration: none;
+}
+#r_sidebar ul li ul li a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+#r_sidebar ul li ul li ul {
+	padding: 0px;
+	margin: 0px;
+}
+#r_sidebar ul li ul li ul li {
+	padding: 0px;
+	margin: 5px 10px 5px 5px;
+}
+
+
+/*********************************************
+		Tabber Lower Sidebar Styles
+*********************************************/
+
+#tabber_sidebar {
+	padding: 0px;
+	margin: 20px 0px 10px 0px;
+}
+#tabber_sidebar #iconlinks {
+	
+}
+#tabber_sidebar #iconlinks a {
+	color: #000;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0px 0px 10px 0px; padding: 0px 0px 0px 50px;
+}
+a#schedule {
+	display: block;
+	height: 43px; line-height: 43px;
+	background: url(images/icons.png) 0px 0px no-repeat;
+}
+a#checklocal {
+	display: block;
+	height: 40px; line-height: 40px;
+	background: url(images/icons.png) 0px -55px no-repeat;
+}
+a#download {
+	display: block;
+	height: 45px; line-height: 45px;
+	background: url(images/icons.png) 0px -104px no-repeat;
+}
+a#subscribe {
+	display: block;
+	height: 42px; line-height: 42px;
+	background: url(images/icons.png) 0px -160px no-repeat;
+}
+#tabber_sidebar #iconlinks a:hover {
+	text-decoration: underline;
+}
+#tabber_sidebar h2 {
+	font-size: 14px;
+	color: #333;
+	font-family: Helvetica, Arial, Sans-Serif;
+	font-weight: bold;
+	text-align: left;
+	text-transform: uppercase;
+	margin: 0px 0px 10px 0px; padding: 5px;
+	border-bottom: 1px solid #333;
+	list-style-type: none;
+}
+#tabber_sidebar ul {
+	padding: 0px;
+	margin: 0px;
+	text-align: right;
+}
+#tabber_sidebar ul li {
+	list-style-type: none;
+	padding: 0px 0px 10px 0px;
+}
+#tabber_sidebar ul li ul {
+	padding: 0px 0px 0px 0px;
+}
+#tabber_sidebar ul li ul li {
+	padding: 0px;
+	margin: 0px;
+}
+#tabber_sidebar ul li ul li a {
+	color: #888;
+	text-decoration: none;
+}
+#tabber_sidebar ul li ul li a:hover {
+	color: #666666;
+	text-decoration: underline;
+}
+#tabber_sidebar ul li ul li ul {
+	padding: 0px;
+	margin: 0px;
+}
+#tabber_sidebar ul li ul li ul li {
+	padding: 0px;
+	margin: 5px 10px 5px 5px;
+}
+
+/*********************************************
+		Comment Styles
+*********************************************/
+#comments {
+	padding: 8px;
+}
+#comments .even {
+	margin: 5px 0px 5px 0px;
+	padding: 10px;
+	background: #FFFFFF;
+	overflow: hidden;
+	border-bottom: 1px dotted #B7B7B7;
+}
+#comments .odd {
+	margin: 5px 0px 5px 0px;
+	padding: 10px;
+	background: #FFFFFF;
+	overflow: hidden;
+	border-bottom: 1px dotted #B7B7B7;
+}
+
+/*********************************************
+		Footer Styles
+*********************************************/
+#footer {
+	margin: 0px 0px 0px 0px;
+	padding: 20px;
+	clear: both;
+	background: #000 url(images/footerbackground.gif) repeat-x;
+	color: #AAA;
+	text-align: left;
+	font-size: 11px;
+}
+#footer a {
+	color: #AAA;
+	text-decoration: none;
+}
+#footer a:hover {
+	color: #FFF;
+	text-decoration: none;
+}
+#footer #footernav ul {
+	list-style-type: none;
+	margin: 0px; padding: 0px 0px 8px 0px;
+}
+#footer #footernav li {
+	display: inline;
+	border-right: 1px solid #DDD;
+	margin: 0px; padding: 0px 10px 0px 10px;
+}
+#footer #footernav li:first-child {
+	margin: 0px; padding: 0px 10px 0px 0px;
+}
+#footer #footernav li a {
+	color: #FFF;
+	text-decoration: none;
+	margin: 0px; padding: 0px;
+}
+#footer #footernav li a:hover {
+	color: #FFF;
+	text-decoration: underline;
+}
+
+/*********************************************
+		The Obligatory WP Stuff
+*********************************************/
+.aligncenter,
+div.aligncenter {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+.alignleft {
+   float: left;
+}
+.alignright {
+   float: right;
+}
+.wp-caption {
+   border: 1px solid #ddd;
+   text-align: center;
+   background-color: #f3f3f3;
+   padding-top: 4px;
+   margin: 10px;
+}
+.wp-caption img {
+   margin: 0;
+   padding: 0;
+   border: 0 none;
+}
+.wp-caption p.wp-caption-text {
+   font-size: 11px;
+   line-height: 17px;
+   padding: 0 4px 5px;
+   margin: 0;
+}

@@ -1,0 +1,122 @@
+/*--------------------------------------------------
+  .tabber = before the tabber interface is set up
+  #jtabber .hiddencontent = after the tabber interface is set up
+  --------------------------------------------------*/
+#jtabber {
+ margin: 25px 0px 10px 0px; padding: 0px 25px;
+ width: 250px;
+ display: block;
+ float: right;
+}
+
+/*--------------------------------------------------
+  ul.tabbernav = the tab navigation list
+  li.tabberactive = the active tab
+  --------------------------------------------------*/
+#nav
+{
+ margin:0;
+ padding: 8px 0;
+ font: bold 12px  Arial, Verdana, Arial;
+}
+
+#nav a
+{
+text-transform: uppercase;
+background: #CCC;
+list-style: none;
+margin: 0 3px 0 0; padding: 8px 0px;
+display: inline;
+background: #CCC;
+color:#545454;
+text-decoration:none;
+}
+
+#nav a span
+{
+padding: 8px;
+border-bottom: none;
+background: #CCC;
+color:#545454;
+text-decoration:none;
+}
+
+#nav li a:hover
+{
+color:#545454;
+text-decoration:none;
+}
+
+#nav a.selected {
+  background: #DFDFDF;
+  color:#545454;
+  text-decoration:none;
+}
+#nav a.selected span
+{
+  background: #DFDFDF;
+  color:#545454;
+  text-decoration:none;
+}
+
+#nav a.selected:hover
+{
+  color:#545454;
+  text-decoration:none;
+}
+
+/*--------------------------------------------------
+  #jtabber .hiddencontent = the tab content
+  Add style only after the tabber interface is set up (#jtabber .hiddencontent)
+  --------------------------------------------------*/
+#jtabber .hiddencontent {
+padding:10px;
+border-top:0;
+background: #DFDFDF;
+position:relative;
+display: none;
+ 
+ /* If you don't want the tab size changing whenever a tab is changed
+    you can set a fixed height */
+
+ min-height:200px;
+
+ /* If you set a fix height set overflow to auto and you will get a
+    scrollbar when necessary */
+
+ /* overflow:auto; */
+}
+* html #jtabber .hiddencontent {
+	height: 200px;
+}
+
+#jtabber .hiddencontent h5  { color: #545454; margin: 0px 0px 0px 0 ;  padding-bottom: 3px;  font:bold 12px Arial, Helvetica, Sans-Serif; line-height: 12px; }
+#jtabber .hiddencontent h5 a, h5 a:visited {color: #545454;	text-decoration: none;}
+#jtabber .hiddencontent h5 a:hover {color: #545454;text-decoration: underline;}
+#jtabber .hiddencontent p {
+	font-size: 11px;
+	margin: 0px 0px 10px 0px; padding: 0px 0px 10px 0px;
+	color: #999;
+	border-bottom: 1px dotted #333;
+	line-height: 11px;
+}
+#jtabber .hiddencontent p a, #jtabber .hiddencontent p a:hover {
+	text-decoration: none;
+	color: #999;
+}
+#jtabber .hiddencontent p a:hover {
+	text-decoration: none;
+	color:#333;
+}
+#jtabber .hiddencontent ul {
+list-style-type: none;
+}
+#jtabber .hiddencontent ul li {
+list-style-type: none;
+}
+#tabber_sidebar {
+	display: block;
+	margin: 25px 0px 10px 0px; padding: 0px 25px;
+	width: 250px;
+	float: right;
+}

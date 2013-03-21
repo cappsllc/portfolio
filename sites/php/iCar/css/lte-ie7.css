@@ -1,0 +1,7 @@
+/* Use this stylesheet for problems with IE7 and below */
+#header #search {
+	margin: 0px; padding: 0px 20px 0px 0px;
+}
+#footer {
+	padding: 10px 20px 20px 20px;
+}

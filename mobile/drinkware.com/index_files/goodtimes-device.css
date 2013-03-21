@@ -1,0 +1,211 @@
+/* Apple iPhone - 460 x 960  
+@media all and (min-width: 460px)
+{
+}*/
+  
+@media all and (min-width: 250px)
+{
+  ul.nav li 
+  {
+    width: 49.5%;
+  }    
+}
+
+
+    /* HTC wildfire - 240 x 320 */
+@media all and (max-width: 250px)
+{
+    
+    ul.buttons li,
+    ul.buttons li > a,
+    div#search
+    {
+        border-radius:0;    
+    }
+    h1
+    {
+        margin-right:0; 
+        background-size: 65%;    
+        height:63px;
+    }
+    div.contentContainer
+    {
+        padding:10px 0 31px;    
+    }
+    div.contentHolder div img
+    {
+        width:100%;    
+    }
+    ul.buttons li,
+    ul.buttons li > a
+    {
+        font-size:1.15em;
+        font-weight:bold;
+    }
+    ul.buttons.jsAccordion li > a span
+    {
+        height:20px;
+        background-position:right -445px;
+    }
+    ul.buttons.jsAccordion li > a span.contract
+    {
+        height:20px;
+        background-position:right -405px;
+    }
+    ul.buttons li > a
+    {
+        padding:2px 5px;
+        margin-top:1px;
+    }
+    ul.buttons li > a img
+    {
+        display:none;    
+    }
+    ul.buttons li > ul,
+    ul.buttons li > ul li,
+    ul.buttons li > ul li a
+    {
+        font-size:0.95em;
+    }
+    ul.buttons li.android a,
+    ul.buttons li.facebook a
+    {
+        font-size:1em; 
+        padding:14px 0 10px 47px;   
+    }
+    div#search
+    {
+        padding:3px 59px 1px 4px;    
+    }
+    div.contentHolder div.imageLeft
+    {
+        padding-left:0;       
+    }
+    div.contentHolder div.imageLeft img
+    {
+        display:none;
+    }
+    h2
+    {
+        margin-left:10px;    
+    }
+    a.large
+    {
+        font-size:1.15em;    
+    }
+    ul.homeFeed
+    {
+        border-radius:0;    
+    }
+}
+@media all and (max-width: 205px)
+{
+    ul.buttons li,
+    ul.buttons li > a,
+    div#search,
+    div.contentHolder
+    {
+        border-radius:0;    
+    }
+    h1
+    {
+        margin-right:0; 
+        background-size: 60%;    
+        height:60px;
+    }
+    h2
+    {
+        margin-left:5px;    
+    }
+    div.contentHolder
+    {
+        border:0;
+        padding:0;    
+    }
+    div.contentContainer
+    {
+        padding-bottom:45px;    
+    }
+    div.contentHolder div
+    {
+        margin:0 5px;    
+    }
+    div#joinFacebook
+    {
+        width:auto;
+        text-align:center;
+    }
+    div#joinFacebook a
+    {
+        background:none;
+        padding:3px;
+    }
+    div#footer
+    {
+        margin-top:-40px;    
+    }
+    
+    ul.buttons li.android a,
+    ul.buttons li.facebook a
+    {
+        background:none;    
+        padding:5px 5px;
+    }
+    ul.homeFeed li
+    {
+        margin:5px 5px;    
+    }
+    ul.homeFeed li h2
+    {
+        font-size:1.15em;    
+    }
+    ul.nav li
+    {
+        width:32.5%;   
+    }
+}
+@media all and (max-width: 485px) and (min-width: 475px)
+{
+    input[type="submit"],
+    input[type="text"],
+    div#joinFacebook a,
+    ul.nav li
+    {
+        padding-bottom:0;    
+    }
+    input[type="text"]
+    {
+        width:98%;    
+    }
+    a,
+    ul.nav li a
+    {
+        margin-bottom:0;    
+    }
+    ul.nav
+    {
+        background:none;    
+    }
+    ul.nav li
+    {
+        background:url("../images/sprMain.png") 0 -176px repeat-x;    
+    }
+    ul.buttons li > a
+    {
+        font-size:1.35em; 
+    }
+    a.drinkAware
+    { 
+        background-position:0 -205px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */

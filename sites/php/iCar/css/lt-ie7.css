@@ -1,0 +1,8 @@
+/* Use this stylesheet to fix problems with any IE browser below IE7 */
+#comments .even, #comments .odd {
+	word-wrap: break-word;
+}
+.clearfix { height: 1%; }
+#footernav ul { /*strange fix, but it works*/
+	behavior:expression(this.firstChild.style.padding = "0px 10px 0px 0px");
+}

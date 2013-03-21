@@ -1,0 +1,119 @@
+div.poll 
+{
+  margin:0;
+  padding:0;
+}
+
+div.poll h3 {}
+
+div.poll ul,
+div.poll ul li
+{
+  width:100%;
+  margin:0;
+  padding:0;
+  background-image:none;
+  list-style:none;
+}
+div.poll ul li div.answer img
+{
+    margin:0px;
+}
+
+div.poll ul li div.answer
+{
+  margin:0;
+  padding:0;
+  clear:both;
+}
+
+/*
+
+div.poll ul li div.result 
+{
+  margin:0;
+  padding:0;
+}
+
+div.poll ul li div.result .bar 
+{
+  border: 1px solid #ccc; 
+  margin: 0;
+  padding: 0; 
+  background: white;
+}
+div.poll ul li div.result .bar > div {
+  background-color: #F8DB00; 
+  height: 12px;
+  margin:0;
+  padding:0;
+}
+*/
+
+/* Poll Results */
+div.poll,
+div.poll table,
+div.poll table tr,
+div.poll table tr td,
+div.poll div.result 
+{
+  margin:0;
+  padding:0;
+}
+div.poll table
+{
+  width:100%;
+}
+
+div.poll table tr
+{
+   vertical-align:top;
+  margin-bottom:10px;
+}
+div.poll div.result .bar 
+{
+  border: 1px solid #ccc; 
+  margin: 0;
+  padding: 0; 
+  background: white;
+}
+div.poll div.result .bar > div {
+  background-color: #F8DB00; 
+  height: 12px;
+  margin:0;
+  padding:0;
+}
+div.poll div.result table image-col
+{
+  max-width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */

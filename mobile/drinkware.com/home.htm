@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)http://m.drinkaware.co.uk/ -->
+<html class="ui-mobile"><script type="text/javascript" async="" src="./home_files/ga.js"></script><script type="text/javascript" src="chrome-extension://khbjahpecnkenngkidhioicnfpakihgo/iframe_raw.js"></script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!--<base href="http://m.drinkaware.co.uk/">--><base href=".">
+  <meta charset="utf-8">
+        <title>Alcohol Advice | Drinkaware - for the facts about Alcohol</title>
+ 
+  <meta name="HandheldFriendly" content="true">
+  <meta name="MobileOptimized" content="320">
+  
+  <link rel="apple-touch-icon" href="http://m.drinkaware.co.uk/images/drinkaware-custom-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="http://m.drinkaware.co.uk/images/drinkaware-custom-ipad.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="http://m.drinkaware.co.uk/images/drinkaware-custom-iphone.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+   
+  
+    <!--css-->
+  <link rel="stylesheet" href="http://m.drinkaware.co.uk/css/jquery.mobile-1.0.css">
+  <link rel="stylesheet" href="http://m.drinkaware.co.uk/css/jquery.mobile.structure-1.0.css">
+    
+  <link rel="stylesheet" href="http://m.drinkaware.co.uk/css/custom.css">
+  <link rel="stylesheet" type="text/css" media="only screen and (-webkit-min-device-pixel-ratio: 2)" href="./home_files/2x.custom.css">
+    
+    <!--js-->
+  
+  <script src="./home_files/jquery-1.7.1.min.js"></script>
+  <script src="./home_files/jquery.mobile-1.0.js"></script>
+  
+  <script src="./home_files/jquery.mobile.tabs.js"></script>
+   
+  
+
+</head> 
+<body class="ui-mobile-viewport">
+    <div data-role="page" data-theme="d" id="home_page" data-url="home_page" tabindex="0" class="ui-page ui-body-d ui-page-active" style="min-height: 943px;"> 
+    
+      
+     <!-- this should be only on the homepage -->
+    <script src="./home_files/jquery.addToHome.js"></script> 
+    <div data-role="header" data-theme="none" data-position="inline" data-title="" class="ui-header ui-bar-none" role="banner">
+      <div class="dw_header">
+        <div class="dw_logo"></div>
+      </div>
+    </div>
+  
+    <div data-role="content" class="ui-content" role="main">
+      
+    <form id="target" method="get" action="http://m.drinkaware.co.uk/search-results/">
+  <div class="dw_search_main">
+    <div class="dw_search_holder"><label for="search" class="ui-input-text">What would you like to know?</label><input type="text" name="search" id="search" class="ui-input-text ui-body-d ui-corner-all ui-shadow-inset"><div data-theme="d" class="ui-btn ui-btn-up-d ui-btn-corner-all ui-shadow" aria-disabled="false"><span class="ui-btn-inner ui-btn-corner-all" aria-hidden="true"><span class="ui-btn-text"></span></span><button id="submitForm" class="search_btn ui-btn-hidden" aria-disabled="false"></button></div><div class="dw_search_bottom_arrow"></div>
+    </div>
+  </div>
+</form><script type="text/javascript">
+      $(document).ready(function () {
+      $('#search').keypress(function (event) {
+          var keyCode = event.keyCode ? event.keyCode : event.which ? event.which : event.charCode;
+          if (keyCode == 13) {
+              event.preventDefault();
+              $('#target').submit();         
+          }
+      });
+    
+      $('#submitForm').click(function() {  
+              event.preventDefault();    
+          $('#target').submit();
+      });
+    
+      $('#target').submit(function() { 
+        console.log($('#search').val().length);
+        if ($('#search').val().length != 0){
+          return true;
+        }
+        else{
+          return false;
+        }
+      });
+    });
+    </script>
+    <div class="dw_home_page_holder">
+      <div class="dw_home_main_pic"><a data-ajax="false" data-transition="slide" href="http://m.drinkaware.co.uk/alcohol-you/health/effects-of-alcohol/" title="Effects of alcohol" class="ui-link"><div class="title_holder"><h1>Effects of alcohol</h1></div><div class="ribbon">&nbsp;</div><img src="./home_files/_0006_homepage-effects-of-alcohol.jpg"></a></div><div class="dw_btns_holder"><ul data-role="none" data-inset="false" data-theme="c" data-ajax="false"><li><a data-ajax="false" href="http://m.drinkaware.co.uk/alcohol-you/" data-transition="slide" class="ui-link"><h2>Alcohol &amp; You</h2></a></li><li><a data-ajax="false" href="http://m.drinkaware.co.uk/the-facts-about-alcohol/" data-transition="slide" class="ui-link"><h2>The facts about alcohol</h2></a></li><li><a data-ajax="false" href="http://m.drinkaware.co.uk/tools/" data-transition="slide" class="ui-link"><h2>Tools to cut down</h2></a></li></ul></div>
+    </div>   
+  
+    </div>
+    <!--footer-->
+    <div data-role="footer" data-theme="none" class="ui-footer ui-bar-none" role="contentinfo">
+      <div class="dw_footer first_bg">
+        <a href="http://my.drinkaware.co.uk/users/sign_in.mobile" target="_blank" onclick="crossDomains(this.href); return false;" rel="external" class="ui-link"><span class="my_drinkaware_btn"></span></a>
+      </div>
+      <div class="dw_footer second_bg"><span>&nbsp;</span><a data-ajax="false" href="http://m.drinkaware.co.uk/about-us/" class="ui-link">About Us</a><span>&nbsp;</span><a target="_blank" onclick="crossDomains(this.href); return false;" class="external ui-link" href="http://www.drinkaware.co.uk/?nomobile">View Full Site</a><span>&nbsp;</span><a data-ajax="false" href="mailto:contact@drinkaware.co.uk" class="ui-link">Contact Us</a><span>&nbsp;</span></div><div class="dw_footer"><span><small>Copyright © 2012 Drinkaware</small></span><span class="right"><a target="_blank" class="external ui-link" href="https://www.facebook.com/MyDrinkaware"><div class="facebook_icon">&nbsp;</div></a><a target="_blank" class="external ui-link" href="https://twitter.com/#!/drinkaware"><div class="twitter_icon">&nbsp;</div></a></span></div>
+     </div>
+  </div>
+    <!-- /footer --> 
+
+    
+  <script src="./home_files/jquery.dailyGuideRotator.js"></script>
+  <script src="./home_files/jquery.touchSlider.js"></script> 
+  <script type="text/javascript" src="./home_files/unitCalculator.js"></script>
+  <!-- removed from here and added to homepage
+  <script src="/scripts/jquery.addToHome.js"></script>
+ --> 
+  <script src="./home_files/caloriesCalculator.js"></script>
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-5152163-1']);
+    _gaq.push(['_setDomainName', '.drinkaware.co.uk']);
+    
+    _gaq.push(['_setCustomVar',1,'SOC_visitor','', 1]);
+    _gaq.push(['_setCustomVar',2,'SOC_visit','', 2]);
+    _gaq.push(['_setCustomVar',3,'SOC_pageview','', 3]);
+
+    _gaq.push(['_trackPageview']);
+    
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <script type="text/javascript">
+    function crossDomains(link)  {
+      var pageTracker = _gat._getTrackerByName();
+      link = pageTracker._getLinkerUrl(link);
+      document.location = link;
+    }
+  </script>
+  
+
+<div class="ui-loader ui-body-a ui-corner-all" style="top: 471.5px;"><span class="ui-icon ui-icon-loading spin"></span><h1>loading</h1></div></body></html>

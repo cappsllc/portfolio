@@ -1,0 +1,55 @@
+/* This handles the hover state for the top-level LI items */
+#menu li:hover, #menu li.sfhover {
+	color: #FFF;
+}
+/* This hides the nested UL before you hover */
+#menu li ul {
+	position: absolute;
+	width: 150px;
+	left: -999em;
+}
+/* This shows the nested UL when you hover */
+#menu li:hover ul, #menu li.sfhover ul {
+	left: auto;
+	display:  block;
+}
+
+/* This is the style for the nested UL */
+#menu li:hover ul, #menu li.sfhover ul {
+	background: #555555;
+	display: block;
+	margin: 0px; padding: 0px;
+	border-top: 2px solid #e4e4e4;
+}
+/* This is the style for the LI items within the nested UL */
+#menu li:hover ul li,
+#menu li.sfhover ul li {
+	background: #555555;
+	width: 150px;
+	display: block;
+	padding: 0px; margin: 0px;
+	text-align: left;
+	border: none;
+}
+/* This is the style for the links withing the LI items within the nested UL */
+#menu li:hover ul li a,
+#menu li:hover ul li.current_page_item a,
+#menu li.sfhover ul li a,
+#menu li.sfhover ul li.current_page_item a {
+	background: transparent;
+	width: 140px;
+	display: block;
+	padding: 5px;
+	margin: 0px;
+	border: none;
+	color: #AAA;
+	font-weight: bold;
+}
+/* This is the style for the hover state on the links within the LI items within the nested UL */
+#menu li:hover ul li a:hover, #menu li.sfhover ul li a:hover {
+	padding: 5px;
+	margin: 0px;
+	color: #FFF;
+	font-weight: bold;
+	background: #777;
+}

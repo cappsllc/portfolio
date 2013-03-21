@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+
+.dw_logo {
+	background: url(../images/drink_aware_logo@2x.png) no-repeat;
+	background-size: 230px 60px;
+}
+
+.dw_home_page_icon {
+	background: url(../images/dw_home_page_icon@2x.png) no-repeat;
+	background-size: 50px 30px;
+}
+
+.dw_home_main_pic .ribbon {
+	background: url(../images/ribbon_icon@2x.png) top no-repeat;
+	background-size: 56px 56px;
+}
+.dw_custom_arrow {
+	background: url(../images/dw_custom_arrow@2x.png) center right no-repeat;
+	background-size: 18px 18px;
+}
+
+

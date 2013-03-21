@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://www.gametech.us/schedule.html -->
+<html class="ui-mobile"><script type="text/javascript" src="chrome-extension://khbjahpecnkenngkidhioicnfpakihgo/iframe_raw.js"></script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" src="./schedule_files/user_timeline.json"></script><!--<base href="http://www.gametech.us/schedule.html">--><base href="."> 
+	<title>GameTech '12</title> 
+    <meta charset="utf-8">
+    
+    <!-- Full Screen Web App Stuff for iOS -->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,maximum-scale=1, user-scalable=no"> 
+    <link href="http://www.gametech.us/images/icon.png" rel="apple-touch-icon">
+	<link href="http://www.gametech.us/images/gt-startup.png" rel="apple-touch-startup-image"> 
+        
+	<!-- JQuery Mobile -->    
+    <link rel="stylesheet" href="http://www.gametech.us/css/jquery.mobile-1.1.0-rc.1.css">
+	<script src="./schedule_files/jquery-1.7.1.min.js"></script>
+	<script src="./schedule_files/jquery.mobile-1.1.0-rc.1.js"></script>    	
+    <script src="./schedule_files/jquery.tinysort.min.js"></script>	
+    <!-- JQuery Mobile -->     
+    
+    <!-- Custom for GameTech -->
+   	
+    <link rel="stylesheet" href="http://www.gametech.us/css/gametech-custom.css">
+    <script src="./schedule_files/gt-custom.js"></script>
+
+       
+   	<script>
+	// Twitter Feed Using JQuery
+	
+	$("#main").live('pageinit', function (evt) { 
+       	var url='http://twitter.com/statuses/user_timeline.json?screen_name=DefenseGameTech&count=5&callback=?';
+		var html='<marquee behavior="scroll" scrollamount="7" direction="left">';
+		
+		$.getJSON(url,function(data){     
+    	$.each(data,function(i,tweet){
+        	html+='<a href="http://mobile.twitter.com/DefenseGameTech" target="_blank">' +tweet.text+'</a> . . . ';
+    		});
+		
+    	html += '</marquee>';
+    	$(".results").append(html);
+    	$('div.results marquee').marquee();
+		
+    		});
+	
+		});
+	</script>
+
+
+</head>
+
+<body class="bggt ui-mobile-viewport ui-overlay-c"> 
+
+<div data-role="page" id="main" class="bggt ui-page ui-body-c ui-page-header-fixed ui-page-footer-fixed" data-url="main" tabindex="0" style="padding-top: 51px; padding-bottom: 43px; min-height: 849.0185127258301px;">
+
+<div data-role="header" data-position="fixed" class="ui-header ui-bar-a ui-header-fixed slidedown" role="banner" style="">
+
+		<div data-role="navbar" class="custom-navbar ui-navbar" role="navigation">
+			<ul class="ui-grid-d">
+            <li class="ui-block-a"><a href="http://www.gametech.us/schedule.html#main" id="home-navbar" data-icon="custom" class="ui-btn ui-btn-icon-top ui-btn-up-a" data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="span" data-iconpos="top" data-theme="a"><span class="ui-btn-inner"><span class="ui-btn-text"></span><span class="ui-icon ui-icon-custom ui-icon-shadow"></span></span></a></li>
+            <li class="ui-block-b"><a href="./schedule_files/schedule.htm" id="schedule-navbar" data-icon="custom" data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="span" data-iconpos="top" data-theme="a" class="ui-btn ui-btn-icon-top ui-btn-up-a"><span class="ui-btn-inner"><span class="ui-btn-text"></span><span class="ui-icon ui-icon-custom ui-icon-shadow"></span></span></a></li>
+            <li class="ui-block-c"><a href="http://www.gametech.us/speakers.html" id="speakers-navbar" data-icon="custom" data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="span" data-iconpos="top" data-theme="a" class="ui-btn ui-btn-icon-top ui-btn-up-a"><span class="ui-btn-inner"><span class="ui-btn-text"></span><span class="ui-icon ui-icon-custom ui-icon-shadow"></span></span></a></li>
+		    <li class="ui-block-d"><a href="http://www.gametech.us/maps.html" id="maps-navbar" data-icon="custom" data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="span" data-iconpos="top" data-theme="a" class="ui-btn ui-btn-up-a ui-btn-icon-top"><span class="ui-btn-inner"><span class="ui-btn-text"></span><span class="ui-icon ui-icon-custom ui-icon-shadow"></span></span></a></li>
+		    <li class="ui-block-e"><a href="http://www.gametech.us/more.html" id="more-navbar" data-icon="custom" data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="span" data-iconpos="top" data-theme="a" class="ui-btn ui-btn-up-a ui-btn-icon-top"><span class="ui-btn-inner"><span class="ui-btn-text"></span><span class="ui-icon ui-icon-custom ui-icon-shadow"></span></span></a></li>
+            </ul>
+	</div>
+</div><!-- /header -->
+    
+	<div data-role="content" class="ui-content" role="main">
+    <div id="gtlogo"></div>
+    </div><!-- /content -->
+
+ 
+	
+<div data-role="footer" data-theme="gt" data-position="fixed" class="ui-footer ui-bar-gt ui-footer-fixed slideup" role="contentinfo" style="">
+<div id="twitbar">
+<a href="http://mobile.twitter.com/searches?q=%23gametech" data-mini="true" data-role="button" data-icon="twitter" data-theme="a" target="_blank" data-corners="true" data-shadow="true" data-iconshadow="true" data-inline="false" data-wrapperels="span" class="ui-btn ui-btn-up-a ui-shadow ui-btn-corner-all ui-mini ui-btn-icon-left"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">#GameTech</span><span class="ui-icon ui-icon-twitter ui-icon-shadow"></span></span></a></div> 
+<div class="results"></div> 
+</div><!-- /footer -->
+
+</div><!-- /page -->
+
+
+<div class="ui-loader ui-corner-all ui-body-a ui-loader-default"><span class="ui-icon ui-icon-loading"></span><h1>loading</h1></div><div data-role="page" id="homePage" class="bggt ui-page ui-body-c ui-page-header-fixed ui-page-active" data-url="/schedule.html" data-external-page="true" tabindex="0" style="padding-top: 51px; min-height: 892.0185165405273px;">
+<div data-role="header" data-position="fixed" class="ui-header ui-bar-a ui-header-fixed slidedown" role="banner" style="">
+
+		<div data-role="navbar" class="custom-navbar ui-navbar" role="navigation">
+			<ul class="ui-grid-d">
+            <li class="ui-block-a"><a href="http://www.gametech.us/schedule.html#main" id="home-navbar" data-icon="custom" data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="span" data-iconpos="top" data-theme="a" class="ui-btn ui-btn-up-a ui-btn-icon-top"><span class="ui-btn-inner"><span class="ui-btn-text"></span><span class="ui-icon ui-icon-custom ui-icon-shadow"></span></span></a></li>
+            <li class="ui-block-b"><a href="./schedule_files/schedule.htm" id="schedule-navbar" data-icon="custom" class="ui-btn-active ui-btn ui-btn-icon-top ui-btn-up-a" data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="span" data-iconpos="top" data-theme="a"><span class="ui-btn-inner"><span class="ui-btn-text"></span><span class="ui-icon ui-icon-custom ui-icon-shadow"></span></span></a></li>
+            <li class="ui-block-c"><a href="http://www.gametech.us/speakers.html" id="speakers-navbar" data-icon="custom" data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="span" data-iconpos="top" data-theme="a" class="ui-btn ui-btn-up-a ui-btn-icon-top"><span class="ui-btn-inner"><span class="ui-btn-text"></span><span class="ui-icon ui-icon-custom ui-icon-shadow"></span></span></a></li>
+		    <li class="ui-block-d"><a href="http://www.gametech.us/maps.html" id="maps-navbar" data-icon="custom" data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="span" data-iconpos="top" data-theme="a" class="ui-btn ui-btn-up-a ui-btn-icon-top"><span class="ui-btn-inner"><span class="ui-btn-text"></span><span class="ui-icon ui-icon-custom ui-icon-shadow"></span></span></a></li>
+		    <li class="ui-block-e"><a href="http://www.gametech.us/more.html" id="more-navbar" data-icon="custom" data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="span" data-iconpos="top" data-theme="a" class="ui-btn ui-btn-up-a ui-btn-icon-top"><span class="ui-btn-inner"><span class="ui-btn-text"></span><span class="ui-icon ui-icon-custom ui-icon-shadow"></span></span></a></li>
+            </ul>
+	</div>
+</div>
+
+        
+	<div data-role="content" id="homePageContent" class="ui-content" role="main">	
+		 <ul data-role="listview" data-inset="true" data-theme="d" data-divider-theme="a" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+         <li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-btn ui-bar-a ui-corner-top ui-btn-up-undefined">General Schedule</li>		
+            <li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-d"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="http://www.gametech.us/wednesday/index.html" class="ui-link-inherit">Wednesday, March 28</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>		
+            <li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-d"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="http://www.gametech.us/thursday/index.html" class="ui-link-inherit">Thursday, March 29</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>	
+            <li data-corners="false" data-shadow="false" data-iconshadow="true" data-inline="false" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-corner-bottom ui-btn-up-d"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="http://www.gametech.us/friday/index.html" class="ui-link-inherit">Friday, March 30</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div></li>	
+        </ul>		       	
+	</div><!-- /content -->
+
+
+
+</div></body></html>
